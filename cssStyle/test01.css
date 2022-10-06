@@ -1,0 +1,59 @@
+h1 {
+    color: cyan;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(248, 240, 229);
+    line-height: 1.0em;
+    background-image: url(../imgs/1.img);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: ; */
+}
+
+
+/* h1标签无法添加类 */
+
+p.description01 {
+    color: brown;
+    font-weight: bolder;
+    text-decoration: overline;
+    font-size: 100%;
+    font-style: oblique;
+}
+
+p.weapon {
+    color: rgb(75, 108, 158);
+    font-size: 150%;
+}
+
+p.description02 {
+    font-family: cursive, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100%;
+    color: rgba(139, 22, 218, 0.897);
+    font-weight: bolder;
+}
+
+p.test01 {
+    font-weight: bolder;
+    color: rgb(80, 93, 209);
+}
+
+li.classli {
+    border-color: rgb(176, 151, 213);
+    border-width: 1px;
+    border-style: solid;
+    /* background-color: rgb(166, 150, 138); */
+    padding: 25px;
+    margin: 0px;
+}
+
+span.classspan {}
+
+div.test01 {
+    margin-right: -25px;
+    text-align: justify;
+}

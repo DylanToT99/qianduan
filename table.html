@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #sp2 {
+            display: none;
+        }
+        
+        #sp2 {
+            display: block;
+        }
+        
+        #sp1 {
+            display: block;
+            height: 100px;
+            width: 300px;
+            background-color: blueviolet;
+        }
+        
+        #div1 {
+            height: 100px;
+            width: 300px;
+            background-color: blueviolet;
+            display: inline-block;
+        }
+        
+        #div2 {
+            height: 100px;
+            width: 300px;
+            background-color: blueviolet;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" width="200px" style="border-collapse: collapse" height="200px">
+        <tr>
+            <th colspan="2">姓名+年龄</th>
+
+            <th>住址</th>
+        </tr>
+        <tr align="center">
+            <td rowspan="2">dylan</td>
+            <td>15</td>
+            <td>安徽</td>
+        </tr>
+        <tr align="center">
+
+            <td>15</td>
+            <td>安徽</td>
+        </tr>
+        <tr align="center">
+            <td>dylan</td>
+            <td>15</td>
+            <td>安徽</td>
+        </tr>
+    </table>
+    <form action="http://www.baidu.com" method="get">
+        <label for="123">文本</label>
+        <input type="text" value="" id="123">
+        <input type="button" name="普通按钮" value="普通按钮">
+        <label for="1">选择</label>
+        <input type="checkbox" id="1">
+        <label for="2">多选</label>
+        <input type="radio" id="2">
+        <input type="submit" value="submmit">
+        <input type="reset">
+
+        <button>普通按钮</button>
+        <button type="submit">提交按钮</button>
+        <button type="reset">重置按钮</button>
+    </form>
+    <span id="sp1">
+        这是一个span
+    </span>
+    <span id="sp2">
+        这是第二个span
+    </span>
+    <span id="sp3">
+        这是第三个span
+    </span>
+    <div id="div1">
+        111
+    </div>
+    <div id="div2">
+        222
+    </div>
+    <div id="div3">
+        333
+    </div>
+</body>
+
+</html>

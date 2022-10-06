@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--js代码需要编写到script标签-->
+    <!-- <script type="text/javascript" src="test.js"></script> -->
+    <script type="text/javascript">
+        /* var obj = '{"name":"潘","age":16}';
+                                                                                                                                let obj2 = {
+                                                                                                                                    name: "panyuhang",
+                                                                                                                                    attr: ["18,19", obj, 15],
+                                                                                                                                    "age": 89
+                                                                                                                                };
+                                                                                                                                var obj6=JSON.stringify(obj2,null,4)
+                                                                                                                                var obj7=JSON.stringify(obj2,null,"--");
+                                                                                                                                console.log(obj7)
+                                                                                                                                console.log(obj6)
+                                                                                                                                var string="hello";
+                                                                                                                                var stringtest=JSON.stringify(string);
+                                                                                                                                var obj5=JSON.stringify(obj2,["name","attr"]);
+                                                                                                                                console.log(obj5)
+                                                                                                                                var obj3 = JSON.stringify(obj2);
+                                                                                                                                var obj4=JSON.stringify(obj2,(key,value)=>{
+                                                                                                                                    switch (key) {
+                                                                                                                                        case "name":
+                                                                                                                                            return "潘";
+                                                                                                                                        case "attr":
+                                                                                                                                            return value.join(",")
+                                                                                                                                        case "age":
+                                                                                                                                            return 18;
+                                                                                                                                        default :
+                                                                                                                                            return value;
+
+                                                                                                                                    }
+                                                                                                                                })
+                                                                                                                                console.log(typeof  stringtest)
+                                                                                                                                console.log(typeof JSON.parse(obj3))
+                                                                                                                                console.log(typeof obj3)
+                                                                                                                                console.log(JSON.parse(obj3))
+                                                                                                                                console.log(obj3);
+                                                                                                                                console.log(obj2.attr[1]);
+                                                                                                                                console.log(obj4);
+                                                                                                                                // console.log(JSON.parse(obj));*/
+    </script>
+    <script type="text/javascript">
+        let obj = {
+            name: "Dylan",
+            age: 18,
+            skills: ["java", "html", "css", "javascript", "spring"],
+            toJSON: function() {
+                return this.skills;
+            }
+        };
+        let obj1 = JSON.stringify(obj)
+        console.log(obj1)
+        let book = {
+            name: "javascript",
+            authors: ["1", "2"],
+            year: 2016,
+            releasedDate: new Date(2017, 11, 1)
+        };
+        let book1 = JSON.stringify(book);
+        book2 = JSON.parse(book1, (key, value) => {
+                switch (key) {
+                    case "releasedDate":
+                        return new Date(value);
+                    default:
+                        return value;
+                }
+            })
+            //let year=book2.releasedDate.getFullYear();
+
+        console.log(typeof book2.releasedDate)
+        console.log(book1)
+        console.log(book2)
+    </script>
+    <title>vscode</title>
+</head>
+
+<body>
+    <h1>hello</h1>
+    <p>1111</p>
+    <button onclick="alert('点我干嘛?');">点我一下试试</button>
+    <a href="javascript:alert('点')">点!</a>
+    <h1></h1>
+</body>
+
+</html>

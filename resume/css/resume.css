@@ -1,0 +1,95 @@
+/* 通过id选择器设置样式 */
+
+#container {
+    /* background-color: #4b8cec; */
+    /* 设置外边距
+       外边距:
+            上下边距: 0
+            左右边距为: 15%;*/
+    margin: 0 15%;
+}
+
+
+/* 元素选择器, 设置h1标签的样式 */
+
+h1 {
+    height: 70px;
+    /*高度*/
+    color: #ebf5f5;
+    /* 设置行间距 */
+    line-height: 70px;
+    /* 设置首行缩进*/
+    text-indent: 35%;
+    background: cornflowerblue;
+}
+
+
+/* 通过id选择器设置导航列表居中 */
+
+#navigation {
+    /* 居中显示 */
+    text-align: center;
+}
+
+
+/* /后代选择器: 寻找navigation下的li 使得li元素中的内容横向像是*/
+
+#navigation li {
+    /* 使li变为行内元素 */
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: cornflowerblue;
+    /* 行间距和高度保持一致, 使得无序列表的字在正中间 */
+    line-height: 30px;
+    /* 字体颜色--->加了a标签后颜色会改变, 此color可以删除, 直接放到a标签下 */
+    color: white;
+    /* 给定边框 */
+    border: 1px solid cornflowerblue;
+    /* 边框左下角与右上角变圆10px */
+    border-radius: 0 10px;
+}
+
+
+/* 后代选择器 去除a标签的下划线 */
+
+#navigation li a {
+    /*去除文本修饰--->可以去除a标签的下划线 */
+    text-decoration: none;
+    color: white;
+}
+
+
+/* 通过设置a标签的伪类选择器,使得鼠标选中a标签内容时, 字体加粗 */
+
+#navigation li a:hover {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.margin {
+    margin: 0 30px;
+}
+
+#userInfo p {
+    text-indent: 30px;
+}
+
+textarea {
+    /* 父元素宽度的百分比 */
+    width: 100%;
+    height: 100px;
+}
+
+#copyright {
+    background-color: cornflowerblue;
+    text-align: center;
+    color: white;
+    height: 70px;
+    /* 行间距 */
+    line-height: 70px;
+    font-size: 12px;
+}
